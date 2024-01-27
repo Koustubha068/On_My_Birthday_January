@@ -1,5 +1,5 @@
 body{
-    background-image:linear-gradient(#000000,#1A1A2A, #946D43, #C6A877);
+    background-color: rgb(56, 56, 56);
 
  }
 
@@ -19,32 +19,33 @@ html::webkit-scrollbar{
 }
 
 .navbar{
-    background-color:#1A1A2A;
+    background-image:linear-gradient(#2c1a21,#4e2b38,rgb(56, 56, 56) );
     position: fixed;
     
 }
 .navbar-nav-a{
-    font-family: "antiquarian", sans-serif;
+    font-family: 'Rouge Script', cursive;
     font-size:18px;
     text-transform:uppercase;
     font-weight:bold;
+    
 }
 .navbar-brand{
     margin-left:3%;
 }
 .navbar-light .navbar-brand{
-    color:#C6A877;
-    font-size:25px;
-    text-transform:uppercase;
+    color:#CFE5E3;
+    font-size:40px;
     font-weight:bold;
     letter-spacing:2px;
-    font-family: "antiquarian-scribe", sans-serif;
+    font-family: 'Rouge Script', cursive;
+    font-style: normal;
 }
 .navbar-light .navbar-nav .nav-link{
-    color:#C6A877;
-    font-weight:bold;
-    font-family: "antiquarian", sans-serif;
-    font-size: 20px;
+    color:#CFE5E3;
+    font-family: 'Rouge Script', cursive;
+    font-size:23px;
+    font-style: normal;
 }
 .navbar-nav{
     text-align:center;
@@ -62,7 +63,7 @@ html::webkit-scrollbar{
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgba(204, 21, 49, 0.8);
+  background-color: rgba(61, 78, 62, 0.8);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -75,13 +76,13 @@ html::webkit-scrollbar{
 }
 @media only screen and (max-width:1000px){
     .navbar-nav.ms-auto{
-        background:rgba(204, 21, 49, 0.5);
+        background:rgba(61, 78, 62, 0.8);
     }
     .navbar-toggler{
         padding:1px 5px;
         font-size: 18px;
         line-height:0.3;
-        background:#C6A877;
+        background:#CFE5E3;
         margin-right:10%;
     }
 }
