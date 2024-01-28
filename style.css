@@ -63,7 +63,7 @@ html::webkit-scrollbar{
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgba(61, 78, 62, 0.8);
+  background-color: rgba(242, 189, 194, 0.8);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -86,3 +86,78 @@ html::webkit-scrollbar{
         margin-right:10%;
     }
 }
+/*beg of a My Bday*/
+
+.row{
+    padding:50px;
+    /*margin-top:50px;*/
+    background:rgba(242, 189, 194, 0.02);
+}
+.newton{
+    text-align:center;
+    font-family: 'Rouge Script', cursive;
+    color:#1A1A2A;
+
+}
+.about{
+    margin-top:50px;
+  
+
+}
+.about .icard{
+    border-radius:10px;
+}
+.about .icard img{
+    border-radius:10px;
+
+}
+.about h2{
+    font-weight:600;
+    font-family: 'Rouge Script', cursive;
+    letter-spacing:0.5px;
+}
+.about p{
+    font-weight:600;
+}
+#about-btn{
+    width:200px;
+    height:75px;
+    border:1px;
+    border-radius:5px;
+    background: #CFE5E3;
+    color:#2c1a21;
+    letter-spacing:2px;
+    font-weight:550;
+    transition:0.5s ease;
+    cursor:pointer;
+    font-family: 'Rouge Script', cursive;
+    font-size: 28px;
+    font-weight:bold;
+}
+.him{
+    color:#CFE5E3;
+    font-family: 'Rouge Script', cursive;
+    font-size:4em;
+}
+.Newton{
+    color:rgba(168, 111, 117, 0.8);
+    font-family: 'Rouge Script', cursive;
+    font-size:22.5px;
+}
+#about-btn:hover{
+    width:170px;
+}
+
+
+.d-block{
+    opacity: 0.5;
+   filter: alpha(opacity=50);
+   border:5px solid #2c1a21;
+    box-shadow:10px 5px 5px rgba(56, 3, 47, 0.4);
+   
+
+}
+
+
+
+/*end of MyDay
