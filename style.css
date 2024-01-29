@@ -1,6 +1,13 @@
 body{
     background-color: rgb(56, 56, 56);
-
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   flex-direction:column;
+   gap:4rem;
+   min-height:100vh;
+   position:relative;
+    
  }
 
 
@@ -77,13 +84,15 @@ html::webkit-scrollbar{
 @media only screen and (max-width:1000px){
     .navbar-nav.ms-auto{
         background:rgba(61, 78, 62, 0.8);
+        max-width:100%;
+       
     }
     .navbar-toggler{
         padding:1px 5px;
         font-size: 18px;
         line-height:0.3;
         background:#CFE5E3;
-        margin-right:10%;
+        margin-right:40%;
     }
 }
 /*beg of a My Bday*/
@@ -92,6 +101,8 @@ html::webkit-scrollbar{
     padding:50px;
     /*margin-top:50px;*/
     background:rgba(242, 189, 194, 0.02);
+    width:100%;
+    text-align:center;
 }
 .newton{
     text-align:center;
@@ -133,6 +144,7 @@ html::webkit-scrollbar{
     font-family: 'Rouge Script', cursive;
     font-size: 28px;
     font-weight:bold;
+    justify-content:center;
 }
 .him{
     color:#CFE5E3;
@@ -147,6 +159,12 @@ html::webkit-scrollbar{
 #about-btn:hover{
     width:170px;
 }
+.container{
+    justify-content:center;
+    width:100%;
+
+}
+
 
 
 .d-block{
@@ -162,57 +180,167 @@ html::webkit-scrollbar{
 
 /*end of MyBDay info
 /* start of buttons*/
-ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(100%, 100%);
-  }
-  
-  ul li {
-    list-style: none;
-    margin: 0 15px;
-  }
-  
-  ul li a {
-    position: relative; 
-    display: block;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    line-height: 63px;
-    background: #333;
-    border-radius: 50%;
-    font-size: 30px;
-    color: #666;
-    transition: .5s;
-  }
-  
-  ul li a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: #ffee10;
-    transition: .5s;
-    transform: scale(.9);
-    z-index: -1;
-  }
-  
-  ul li a:hover::before {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #ffee10;
-  }
-  
-  ul li a:hover {
-    color: #ffee10;
-    box-shadow: 0 0 5px #ffee10;
-    text-shadow: 0 0 5px #ffee10;
-  }
+.btnsContainer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    width:800px;
+    height:400px;
+}
+.btn{
+    position:relative;
+    font-size:2rem;
+    text-decoration:none;
+    text-transform:uppercase;
+    letter-spacing:0.2rem;
+    color:white;
+    background:rgb(56, 56, 56);
+    border:4px solid white;
+    padding:2rem 6rem;
+    cursor:pointer;
+}
+.btn span{
+    position:relative;
+    z-index:1;
+
+}
+.btn:nth-child(1):hover{
+    border-color:rgba(242, 189, 194, 0.8);
+    color:rgba(242, 189, 194, 0.8);
+    box-shadow:0 0 0 rgba(242, 189, 194, 0.8);
+    animation:box 3s infinite;
+}
+.btn:nth-child(2):hover{
+    border-color: rgba(242, 189, 194, 0.8);
+    color: rgba(242, 189, 194, 0.8);
+    box-shadow:0 0 0  rgba(242, 189, 194, 0.8);
+    animation:box 3s infinite;
+}
+.btn:nth-child(3):hover{
+    border-color: rgba(242, 189, 194, 0.8);
+    color: rgba(242, 189, 194, 0.8);
+    box-shadow:0 0 0  rgba(242, 189, 194, 0.8);
+    animation:box 3s infinite;
+}
+.btn:nth-child(4):hover{
+    border-color:rgba(242, 189, 194, 0.8);
+    color:rgba(242, 189, 194, 0.8);
+    box-shadow:0 0 0 rgba(242, 189, 194, 0.8);
+    animation:box 3s infinite;
+}
+
+@keyframes box{
+    0%{
+        box-shadow:rgb(56, 56, 56);
+    }
+    50%{
+        box-shadow: 0 0 27px;
+    }
+    100%{
+        box-shadow:rgb(56, 56, 56);
+    }
+}
+.btn:before{
+    content:"";
+    width:20px;
+    height:20px;
+    /*background-color:rgba(242, 189, 194, 0.8);*//*temporary*/
+    position:absolute;
+    left:80%;
+    top:-15%;
+    transform:translate(0%,15%);
+    transition:left 1s ease;
+}
+.btn:after{
+    content:"";
+    width:20px;
+    height:20px;
+   /* background-color:rgba(242, 189, 194, 0.8);*/
+    position:absolute;
+    left:20%;
+    top:115%;
+    transform:translate(0%,-115%);
+    transition:left 1s ease;
+
+}
+.btn:nth-child(1)::before{
+background-color:rgba(242, 189, 194, 0.8);
+border-radius:2px;
+}
+.btn:nth-child(1)::after{
+    background-color:rgba(242, 189, 194, 0.8);
+    border-radius:2px;
+}
+
+.btn:nth-child(2)::before{
+    background-color:rgba(242, 189, 194, 0.8);
+    border-radius:50px;
+    }
+.btn:nth-child(2)::after{
+        background-color:rgba(242, 189, 194, 0.8);
+        border-radius:50px;
+    }
+
+.btn:nth-child(3)::before{
+    width:0;
+    height:0;
+    border-left:12px solid transparent;
+    border-right:12px solid transparent;
+    border-bottom:24px solid rgba(242, 189, 194, 0.8);
+    top:-17.5%;
+        }
+.btn:nth-child(3)::after{
+    width:0;
+    height:0;
+    border-left:12px solid transparent;
+    border-right:12px solid transparent;
+    border-bottom:24px solid rgba(242, 189, 194, 0.8);
+    top:117.5%;
+        }
+
+.btn:nth-child(4)::before{
+            background-color:rgba(242, 189, 194, 0.8);
+            border-radius:2px;
+            width:25px;
+            height:10px;
+            top:-9%;
+                }
+.btn:nth-child(4)::after{
+    background-color:rgba(242, 189, 194, 0.8);
+    border-radius:2px;
+    width:25px;
+    height:10px;
+    top:108%;
+                }
+
+
+
+.btn:hover::before{
+    left:85%;
+    animation:rotateTop 3s infinite;
+
+}
+.btn:hover::after{
+    left:15%;
+    animation:rotateBottom 3s infinite;
+}
+@keyframes rotateTop{
+    0%{transform:translate(0,15%) rotate(0deg);}
+    25%{transform:translate(0,15%) rotate(90deg);}
+    50%{transform:translate(0,15%) rotate(180deg);}
+    75%{transform:translate(0,15%) rotate(270deg);}
+    100%{transform:translate(0,15%) rotate(360deg);}
+
+    }
+
+@keyframes rotateBottom{
+        0%{transform:translate(0,-115%) rotate(0deg);}
+        25%{transform:translate(0,-115%) rotate(-90deg);}
+        50%{transform:translate(0,-115%) rotate(-180deg);}
+        75%{transform:translate(0,-115%) rotate(-270deg);}
+        100%{transform:translate(0,-115%) rotate(-360deg);}
+    
+        }
+
 /*end of buttons*/
