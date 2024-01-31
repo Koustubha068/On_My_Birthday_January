@@ -107,7 +107,7 @@ html::webkit-scrollbar {
         font-size: 18px;
         line-height: 0.3;
         background: #CFE5E3;
-        margin-right: 10%;
+      
     }
 }
 
@@ -165,7 +165,7 @@ html::webkit-scrollbar {
     transition: 0.5s ease;
     cursor: pointer;
     font-family: "sinete", sans-serif;
-    font-size: 28px;
+    font-size: 1.5em;
     font-weight: bold;
     justify-content: center;
 }
@@ -179,7 +179,7 @@ html::webkit-scrollbar {
 .Newton {
     color: rgba(168, 111, 117, 0.8);
     font-family: "sinete", sans-serif;
-    font-size: 19px;
+    font-size: 1.1rem;
 }
 
 #about-btn:hover {
@@ -440,5 +440,8 @@ html::webkit-scrollbar {
 
 /*end of buttons*/
 /*start of footer*/
-
+.button{
+    width:15%;
+    height:30%;
+}
 /*end of footer*/
