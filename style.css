@@ -440,8 +440,18 @@ html::webkit-scrollbar {
 
 /*end of buttons*/
 /*start of footer*/
-.button{
-    width:15%;
-    height:30%;
+#GitHub{
+    height:35px;
+    border-radius:10%;
+    font-family: "sinete", sans-serif;
+    letter-spacing: 0.2rem;
+    background-color: rgba(242, 189, 194, 0.8);
+}
+.containerfooter{
+    background: rgba(242, 189, 194, 0.02);
+}
+.footer{
+    font-family: "sinete", sans-serif;
+    letter-spacing: 0.2rem;
 }
 /*end of footer*/
