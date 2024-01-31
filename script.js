@@ -30,12 +30,32 @@ const text4 = 'The first successful permanent artificial heart implantation occu
 
 
 
+
 const image13 = 'Enron1.png'
 const image14 = 'Enron2.png'
 const image15 = 'Enron3.png'
 const title5 = 'December 2nd, 2001'
 const link5 = 'https://www.investopedia.com/updates/enron-scandal-summary/'
 const text5 = 'Enron, once a leading energy company and symbol of corporate success, filed for bankruptcy on December 2, 2001. The collapse of Enron was a result of widespread financial fraud and accounting scandals that involved the manipulation of financial statements to conceal the companys massive debts and losses. In the years leading up to its bankruptcy, Enron engaged in questionable accounting practices, hiding debt in off-balance-sheet partnerships and inflating profits. As the truth about the companys financial troubles emerged, confidence in Enron evaporated, causing its stock price to plummet. The bankruptcy filing was one of the largest in U.S. history at the time, leading to significant financial losses for investors and employees. The Enron scandal also prompted regulatory reforms and increased scrutiny of corporate governance and accounting practices, shaping the landscape of corporate accountability and ethics in the years that followed.'
+
+const image16 = "pexels-cup-of-couple-8014714.jpg"
+const image17 = 'pexels-cup-of-couple-8015242.jpg'
+const image18 = 'pexels-towfiqu-barbhuiya-11264390.jpg'
+const title6 = 'December 2nd'
+const link6 =   'https://www.timeanddate.com/on-this-day/december/2'
+const text6 =    'December 2nd, a day that holds special significance as it marks both the celebration of my birthday and a chronicle of historical events.This date has witnessed a tapestry of joyous and somber occurrences. From the birth of iconic pop sensation Britanny Spears to the sobering moment in 1859 when abolitionist John Brown was hanged after his courageous raid on Harpers Ferry, Virginia. The business world felt seismic shifts as Enron filed for bankruptcy protection on this day, forever altering the financial landscape. Stepping into the realm of geopolitics, December 2nd bears the imprint of historical significance with the outlining of the Monroe Doctrine, a pivotal policy in U.S. foreign affairs. Meanwhile, in the medical arena, a groundbreaking achievement unfolded as the first artificial permanent heart transplantation took place, showcasing strides in the field of healthcare. These diverse events on December 2nd intertwine personal celebrations with the broader narrative of humanitys triumphs and tribulations. '
+
+
+function header(image,image2,image3,title,text,link){
+    document.getElementById('image').src =image
+    document.getElementById('image-2').src =image2
+    document.getElementById('image-3').src =image3
+    document.getElementById('Birthday').textContent =title
+    document.getElementById('info').textContent =text
+    document.getElementById('link').href =link
+
+}
+
 
 function button(image , image2, image3, title, text, link){
     document.getElementById('image').src = image
