@@ -96,7 +96,7 @@ html::webkit-scrollbar {
 
 @media only screen and (max-width:1000px) {
     .navbar-nav.ms-auto {
-        background: rgba(61, 78, 62, 0.8);
+        background: rgba(242, 189, 194, 0.2);
         max-width: 100%;
 
 
